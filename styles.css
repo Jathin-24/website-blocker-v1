@@ -1,0 +1,136 @@
+body {
+  font-family: sans-serif;
+  padding: 10px;
+  background-color: #121212;
+  color: #fff;
+}
+input, button {
+  margin: 5px 0;
+}
+/* Common styles for popup and options */
+
+body, html, #root {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0; padding: 10px;
+  background: #f7f9fc;
+  color: #333;
+}
+
+h1, h2 {
+  color: #1a73e8;
+  margin-bottom: 10px;
+}
+
+.popup-container, .options-container {
+  max-width: 400px;
+  margin: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background: #e8f0fe;
+}
+
+.hidden-row td {
+  color: #888;
+  font-style: italic;
+}
+
+button {
+  background-color: #1a73e8;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  margin-left: 5px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+button:hover:not(:disabled) {
+  background-color: #155ab6;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+input[type="text"], input[type="password"] {
+  width: calc(100% - 100px);
+  padding: 6px;
+  margin-right: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 1rem;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 0.1);
+}
+
+.hidden-item {
+  color: #999;
+  font-style: italic;
+}
+
+.message {
+  margin-top: 8px;
+  color: #d93025;
+  font-weight: 600;
+}
+
+.login-box, .set-password {
+  margin-top: 10px;
+}
+
+input[type="file"] {
+  margin-top: 5px;
+  width: 100%;
+}
+
+.options-container section {
+  margin-bottom: 25px;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li div button {
+  margin-left: 6px;
+}
+
+.hidden-item {
+  color: #999;
+  font-style: italic;
+}
