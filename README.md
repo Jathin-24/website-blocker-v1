@@ -1,34 +1,34 @@
-# 🚫 Website Blocker v1 (Focus Guardian)
+Here’s a **cleaned-up and well-structured version** of your `README.md` with an improved **file structure section** and better formatting for clarity and professionalism:
 
-A Chrome extension that helps you stay focused by blocking distracting websites and keywords. Includes a modern React UI, persistent settings, analytics, dark mode, and more.
+---
+
+# 🚫 Website Blocker v1 — *Focus Guardian*
+
+A Chrome extension to help you stay focused by blocking distracting websites and keywords. It features a modern React UI, persistent settings, analytics, dark mode, and more.
 
 ---
 
 ## 🔧 Features
 
-- ✅ Block websites by URL or keyword
-- 🔐 Hide sensitive blocklists (only visible after login)
-- 📊 Track site usage and view analytics
-- 🎨 React-based popup and options UI
-- 🌑 Dark mode toggle
-- 📁 Backup and import settings
-- 🔔 Sound/vibration alerts for blocked sites
-- 🧠 Unlock override (password protected)
-- ⚙️ Built with Webpack, Babel, and modern ES6+
+* ✅ Block websites by URL or keyword
+* 🔐 Hide sensitive blocklists (visible only after login)
+* 📊 Track site usage and view analytics
+* 🎨 React-based popup and options UI
+* 🌑 Dark mode toggle
+* 📁 Backup and import settings
+* 🔔 Sound/vibration alerts for blocked sites
+* 🧠 Unlock override (password protected)
+* ⚙️ Built with Webpack, Babel, and modern ES6+
 
 ---
 
 ## 🚀 How It Works
 
-1. **Content Script (`content.js`)** runs on each webpage and checks if the current URL or content contains blocked keywords.
-2. **Background Script (`background.js`)** manages communication and enforces site-blocking logic.
-3. **Popup UI (`popup.jsx`)** provides quick view of the extension status and toggle features.
-4. **Options Page (`options.jsx`)** allows you to:
-   - Add/remove blocked URLs/keywords
-   - Set password
-   - Enable dark mode
-   - Export/import your settings
-5. **Settings are stored** in `chrome.storage.local` for persistence.
+1. **Content Script** (`content.js`): Runs on each webpage to check for blocked URLs or keywords.
+2. **Background Script** (`background.js`): Manages core logic and communication between components.
+3. **Popup UI** (`popup.jsx`): Shows quick extension status and allows toggling features.
+4. **Options Page** (`options.jsx`): Manage blocklists, passwords, dark mode, and import/export settings.
+5. **Settings Storage**: Uses `chrome.storage.local` for persistent data.
 
 ---
 
@@ -36,79 +36,102 @@ A Chrome extension that helps you stay focused by blocking distracting websites 
 
 ### Requirements
 
-- Node.js (v16+ recommended)
-- npm or yarn
-- Chrome browser
+* **Node.js** (v16+ recommended)
+* **npm** or **yarn**
+* **Google Chrome**
 
-### 1. Clone the repository
+### Steps
+
 
 git clone https://github.com/Jathin-24/website-blocker-v1.git
 cd website-blocker-v1
-2. Install dependencies
 npm install
-3. Build the extension
 npm run build
-This will compile the React components and output the bundled code into the /dist directory (based on your webpack.config.js).
 
-🌐 Load Extension in Chrome
-Open Chrome and go to chrome://extensions/
+### Load in Chrome
 
-Enable Developer mode
+1. Open Chrome and go to `chrome://extensions/`
+2. Enable **Developer mode**
+3. Click **Load unpacked**
+4. Select the root directory of this project (where `manifest.json` is located)
 
-Click "Load unpacked"
+---
 
-Select the root directory of this project (where manifest.json is located)
+## 📁 Project Structure
 
-📁 Project Structure
 website-blocker-v1/
 │
-├── icons/                  # Extension icons
-├── react-app/              # React app source files (if separated)
+├── icons/                 # Extension icons
+├── react-app/             # React app source files (if separated)
 │
-├── background.js           # Background script
-├── content.js              # Content script
-├── manifest.json           # Chrome extension manifest
-├── popup.html              # HTML container for popup
-├── popup.jsx               # React-based popup
-├── options.html            # HTML container for options page
-├── options.jsx             # React-based settings page
-├── styles.css              # Global styles
+├── background.js          # Background script
+├── content.js             # Content script
+├── manifest.json          # Chrome extension manifest
 │
-├── package.json            # Project metadata and dependencies
-├── webpack.config.js       # Webpack bundler config
+├── popup.html             # Popup HTML container
+├── popup.jsx              # Popup React component
+│
+├── options.html           # Options page HTML container
+├── options.jsx            # Options React component
+│
+├── styles.css             # Shared/global styles
+│
+├── webpack.config.js      # Webpack configuration
+├── package.json           # Project metadata and dependencies
 
-🔐 Login & Password Protection
-You can set a password in the Options page
+---
 
-Blocked URLs and keywords are hidden unless you're logged in
+## 🔐 Login & Password Protection
 
-Unlock feature available from the popup (if enabled)
+* Set a password on the **Options Page**
+* Hidden blocked URLs/keywords are **only visible after login**
+* Unlock override is available via the **Popup UI**
 
-🧠 Usage
-🧩 Popup UI: View current status, enable/disable blocking, access unlock
+---
 
-⚙️ Options Page: Add/remove URLs/keywords, change settings, export/import preferences
+## 🧠 Usage Overview
 
-📊 Analytics: Track how much time you spend on blocked websites
+* **Popup UI**: Toggle blocking, view status, unlock settings
+* **Options Page**: Add/remove block entries, adjust settings, import/export
+* **Analytics**: Track time spent on blocked websites
 
-📦 Scripts
-npm run build	 - Bundle the extension with Webpack
+---
 
-📌 Tech Stack
-React (with JSX)
-JavaScript (ES6+)
-Webpack
-Chrome Extension APIs
-Babel
-CSS
+## 📦 Scripts
 
-📄 License
-MIT License. Free to use, modify, and distribute.
+npm run build     # Build the extension with Webpack
 
-👨‍💻 Author
-Jathin-24
-GitHub: @Jathin-24
+---
 
-🤝 Contributions
-Feel free to submit pull requests or open issues to suggest features or improvements.
+## 🛠️ Tech Stack
 
+* **React (JSX)**
+* **JavaScript (ES6+)**
+* **Webpack**
+* **Babel**
+* **Chrome Extension APIs**
+* **CSS**
+
+---
+
+## 📄 License
+
+MIT License — Free to use, modify, and distribute.
+
+---
+
+## 👨‍💻 Author
+
+**Jathin-24**
+GitHub: [@Jathin-24](https://github.com/Jathin-24)
+
+---
+
+## 🤝 Contributions
+
+Contributions and suggestions are welcome!
+Feel free to open an issue or submit a pull request.
+
+---
+
+Let me know if you'd like this turned into a `.md` file or included directly in your project.
