@@ -1,7 +1,3 @@
-Here’s a **cleaned-up and well-structured version** of your `README.md` with an improved **file structure section** and better formatting for clarity and professionalism:
-
----
-
 # 🚫 Website Blocker v1 — *Focus Guardian*
 
 A Chrome extension to help you stay focused by blocking distracting websites and keywords. It features a modern React UI, persistent settings, analytics, dark mode, and more.
@@ -42,11 +38,12 @@ A Chrome extension to help you stay focused by blocking distracting websites and
 
 ### Steps
 
-
+```
 git clone https://github.com/Jathin-24/website-blocker-v1.git
 cd website-blocker-v1
 npm install
 npm run build
+```
 
 ### Load in Chrome
 
@@ -58,7 +55,7 @@ npm run build
 ---
 
 ## 📁 Project Structure
-
+```
 website-blocker-v1/
 │
 ├── icons/                 # Extension icons
@@ -78,6 +75,7 @@ website-blocker-v1/
 │
 ├── webpack.config.js      # Webpack configuration
 ├── package.json           # Project metadata and dependencies
+```
 
 ---
 
@@ -131,7 +129,3 @@ GitHub: [@Jathin-24](https://github.com/Jathin-24)
 
 Contributions and suggestions are welcome!
 Feel free to open an issue or submit a pull request.
-
----
-
-Let me know if you'd like this turned into a `.md` file or included directly in your project.
